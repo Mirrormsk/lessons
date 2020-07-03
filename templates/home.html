@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <style type="text/css">
+        body {
+            background-color: dimgrey;
+        }
+        h1 {
+            color: white;
+            position: relative ;
+            left: 20px;
+        }
+        .dark {
+            background-color: antiquewhite;
+            border-radius: 20px;
+            padding: 15px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>My home page</h1>
+        <form action="{% url 'reverse' %}">
+        <label>
+            <textarea cols="50" rows="10" name="usertext">Enter the text</textarea>
+        </label>
+        <input type="submit" value="Reverse!">
+
+    </form>
+</body>
+</html>
